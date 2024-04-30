@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+
+
+    <div class="aviso">
+        <img width="30" height="30" src="https://img.icons8.com/color/48/000000/delete-sign--v1.png" alt="delete-sign--v1"/>
+        <p>Inserir todos os dados!</p>
+    </div>
+
+    <div class="master">
+
+        <div class="img">
+            <img src="img/8627770-empresa-funcionarios-planejamento-tarefa-e-brainstorming-ilustracao-plana-desenho-pessoas-compartilhando-ideias-e-reuniao-design-plano-ilustracao-moderna-vetor.jpg"
+                alt="">
+            <div class="parag">
+                <p>Byelsantos11@Dev</p>
+            </div>
+        </div>
+        <div class="geral">
+            <div class="tit">
+                <h1>Cadastrar</h1>
+            </div>
+            <div class="inputs">
+                <label for="Nome">Nome</label>
+                <input type="text" name="nome" id="nome" required placeholder="Nome">
+            </div>
+
+            <div class="inputs">
+                <label for="Email">Email</label>
+                <input type="email" name="email" id="email" required placeholder="Email">
+            </div>
+
+            <div class="inputs">
+                <label for="Senha">Senha</label>
+                <input type="password" name="senha" id="senha" required placeholder="Senha">
+            </div>
+
+            <div class="bot">
+                <button type="submit" id="login">Confirmar</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
