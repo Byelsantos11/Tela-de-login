@@ -1,0 +1,33 @@
+
+/*Pegando item dos html*/
+const nome = document.getElementById("nome");
+const email = document.getElementById("email");
+const senha = document.getElementById("senha");
+const login = document.getElementById("login");
+
+
+/*função de clicar e verificar se há inputs vazios. se não tiver pula para proxima fase*/
+
+login.addEventListener("click", function () {
+    if (nome.value.trim() === "" || email.value.trim() === "" || senha.value.trim() === "") {
+        avisar();
+    } else {
+        if (nome.value.trim() !== "") {
+            nome.value = "";
+            email.value = "";
+            senha.value = "";
+        }
+    }
+});
+
+/*função do alerta personalizado*/
+
+function avisar() {
+    const aviso = document.querySelector(".aviso");
+    aviso.style.display = "block";
+
+    setTimeout(function () {
+        aviso.style.display = "none";
+    }, 1000);
+}
+
